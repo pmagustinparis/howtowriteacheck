@@ -51,10 +51,32 @@ export default function Home() {
 
         {/* FAQ Section */}
         <FAQSection />
-      </section>
 
-      {/* Footer */}
-      <Footer />
+        {/* Explore More Guides Section */}
+        <section className="mt-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Explore More Guides</h2>
+          <div className="space-y-2">
+            <a href="/how-to-write-a-check-with-cents" className="block p-2 text-blue-600 hover:underline">
+              How to Write a Check with Cents
+            </a>
+            <a href="/how-to-write-a-check-with-thousands-and-cents" className="block p-2 text-blue-600 hover:underline">
+              How to Write a Check with Thousands and Cents
+            </a>
+            <a href="/how-to-write-a-void-check" className="block p-2 text-blue-600 hover:underline">
+              How to Write a Void Check
+            </a>
+            <a href="/how-to-write-a-check-for-1000" className="block p-2 text-blue-600 hover:underline">
+              How to Write a Check for 1000
+            </a>
+            <a href="/sample-how-to-write-a-check" className="block p-2 text-blue-600 hover:underline">
+              Sample How to Write a Check
+            </a>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <Footer />
+      </section>
     </main>
   )
 }
