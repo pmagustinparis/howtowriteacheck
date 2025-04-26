@@ -235,64 +235,28 @@ export default function HowToWriteACheckWithThousandsAndCentsClient() {
         </div>
 
         {/* Common Mistakes */}
-        <div className="my-12 bg-red-50 p-6 rounded-lg border border-red-100">
+        <div className="my-12 bg-red-50 rounded-lg p-6 border border-red-100">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Common Mistakes to Avoid</h2>
           <div className="space-y-4">
-            <div className="flex items-start">
-              <div className="flex-shrink-0 text-red-500 mr-3">❌</div>
-              <div>
-                <h3 className="font-medium text-gray-900">Using "and" in the wrong place</h3>
-                <p className="text-gray-600">
-                  <strong>Incorrect:</strong> "One thousand <span className="text-red-500">and</span> two hundred
-                  thirty-four and 56/100 Dollars"
-                </p>
-                <p className="text-gray-600">
-                  <strong>Correct:</strong> "One thousand two hundred thirty-four{" "}
-                  <span className="text-green-500">and 56/100</span> Dollars"
-                </p>
-              </div>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
+              <h3 className="text-lg font-medium text-gray-900 mb-2">Incorrect Comma Placement</h3>
+              <p className="text-gray-600">
+                Always place the comma correctly in the numeric amount box. For example, write "$1,234.56" not "$1234.56".
+              </p>
             </div>
 
-            <div className="flex items-start">
-              <div className="flex-shrink-0 text-red-500 mr-3">❌</div>
-              <div>
-                <h3 className="font-medium text-gray-900">Forgetting the comma in the number box</h3>
-                <p className="text-gray-600">
-                  <strong>Incorrect:</strong> "<span className="text-red-500">$1234.56</span>"
-                </p>
-                <p className="text-gray-600">
-                  <strong>Correct:</strong> "<span className="text-green-500">$1,234.56</span>"
-                </p>
-              </div>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
+              <h3 className="text-lg font-medium text-gray-900 mb-2">Omitting the Word "and"</h3>
+              <p className="text-gray-600">
+                Always include the word "and" before writing the cents portion. For example, write "One thousand two hundred thirty-four and 56/100" not "One thousand two hundred thirty-four 56/100".
+              </p>
             </div>
 
-            <div className="flex items-start">
-              <div className="flex-shrink-0 text-red-500 mr-3">❌</div>
-              <div>
-                <h3 className="font-medium text-gray-900">Using numerals instead of words</h3>
-                <p className="text-gray-600">
-                  <strong>Incorrect:</strong> "<span className="text-red-500">1,234</span> and 56/100 Dollars"
-                </p>
-                <p className="text-gray-600">
-                  <strong>Correct:</strong> "
-                  <span className="text-green-500">One thousand two hundred thirty-four</span> and 56/100 Dollars"
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start">
-              <div className="flex-shrink-0 text-red-500 mr-3">❌</div>
-              <div>
-                <h3 className="font-medium text-gray-900">Incorrect hyphenation</h3>
-                <p className="text-gray-600">
-                  <strong>Incorrect:</strong> "One thousand two hundred{" "}
-                  <span className="text-red-500">thirty four</span> and 56/100 Dollars"
-                </p>
-                <p className="text-gray-600">
-                  <strong>Correct:</strong> "One thousand two hundred{" "}
-                  <span className="text-green-500">thirty-four</span> and 56/100 Dollars"
-                </p>
-              </div>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
+              <h3 className="text-lg font-medium text-gray-900 mb-2">Incorrect Fraction Format</h3>
+              <p className="text-gray-600">
+                Write cents as a fraction with 100 as the denominator (e.g., 56/100). Don't write it as a decimal (e.g., 0.56) or as words (e.g., "fifty-six cents").
+              </p>
             </div>
           </div>
         </div>
@@ -342,23 +306,19 @@ export default function HowToWriteACheckWithThousandsAndCentsClient() {
           </div>
         </div>
 
-        {/* CTA Section */}
+        {/* CTA Section - Base Product */}
         <div className="my-12 bg-blue-50 rounded-lg shadow-md border border-blue-200 p-6 text-center">
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">
-            Need to write checks for large amounts frequently?
-          </h3>
-          <p className="text-gray-600 mb-4">
-            Download our printable check template to practice writing checks with thousands and cents.
-          </p>
+          <h3 className="text-xl font-semibold text-gray-900 mb-2">Need a simple printable check?</h3>
+          <p className="text-gray-600 mb-4">Get a ready-to-use printable or editable check template for just $1.</p>
           <Button
             className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-md font-medium"
-            onClick={() => window.open("https://gumroad.com/l/check-template", "_blank")}
+            onClick={() => window.open("https://builtbyagus.gumroad.com/l/gagmwe", "_blank")}
           >
-            Download Printable Template – $1
+            Download Printable Check – $1
           </Button>
         </div>
 
-        {/* Main CTA Section */}
+        {/* Main CTA Section - Both Products */}
         <div className="my-12 md:my-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Primary CTA */}

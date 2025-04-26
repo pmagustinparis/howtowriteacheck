@@ -58,146 +58,55 @@ export default function SampleHowToWriteACheckClient() {
 
         {/* Detailed Breakdown of Each Part */}
         <div className="my-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Breakdown of Each Part of the Check</h2>
-
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Detailed Breakdown of Each Part</h2>
           <div className="space-y-6">
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-4">
-                  <span className="text-blue-600 font-bold">1</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-2">Date</h3>
-                  <p className="text-gray-600 mb-3">
-                    In our sample, the date is written as "April 15, 2025" in the top right corner of the check. You can
-                    write the date in this format (Month Day, Year) or in numeric format (04/15/2025).
-                  </p>
-                  <div className="bg-gray-50 p-3 rounded-md border border-gray-200">
-                    <p className="font-medium">In the sample:</p>
-                    <p className="text-gray-700">April 15, 2025</p>
-                    <p className="mt-2 text-sm text-gray-500">
-                      <strong>Tip:</strong> Always use the current date unless you're post-dating the check (writing a
-                      future date), which should only be done with the recipient's agreement.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <h3 className="text-lg font-medium text-gray-900 mb-2">1. Date</h3>
+              <p className="text-gray-600">
+                The date is written in the top right corner. You can use either the numerical format (MM/DD/YYYY) or
+                write it out (Month Day, Year). Always use the current date unless you're post-dating the check.
+              </p>
             </div>
 
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-4">
-                  <span className="text-blue-600 font-bold">2</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-2">Pay to the Order of (Payee)</h3>
-                  <p className="text-gray-600 mb-3">
-                    This line shows who will receive the money. In our sample, the check is made out to "John Smith".
-                    Write the full name of the person or business you're paying.
-                  </p>
-                  <div className="bg-gray-50 p-3 rounded-md border border-gray-200">
-                    <p className="font-medium">In the sample:</p>
-                    <p className="text-gray-700">John Smith</p>
-                    <p className="mt-2 text-sm text-gray-500">
-                      <strong>Important:</strong> Make sure to spell the recipient's name correctly. For businesses,
-                      include any required designations (Inc., LLC, etc.).
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <h3 className="text-lg font-medium text-gray-900 mb-2">2. Payee</h3>
+              <p className="text-gray-600">
+                The "Pay to the Order of" line is where you write the name of the person or company you're paying. Make
+                sure to use their full, correct name as it appears on their bank account.
+              </p>
             </div>
 
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-4">
-                  <span className="text-blue-600 font-bold">3</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-2">Amount in Numbers</h3>
-                  <p className="text-gray-600 mb-3">
-                    In the box on the right side of the check, the amount is written as "$123.45". This is the numerical
-                    representation of the check amount.
-                  </p>
-                  <div className="bg-gray-50 p-3 rounded-md border border-gray-200">
-                    <p className="font-medium">In the sample:</p>
-                    <p className="text-gray-700">$123.45</p>
-                    <p className="mt-2 text-sm text-gray-500">
-                      <strong>Format:</strong> Write the dollar amount as close to the dollar sign as possible. Include
-                      the decimal point and cents. For amounts over $1,000, include commas (e.g., $1,234.56).
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <h3 className="text-lg font-medium text-gray-900 mb-2">3. Amount in Numbers</h3>
+              <p className="text-gray-600">
+                The amount box is where you write the numerical amount. Include both dollars and cents, and make sure to
+                write clearly. For example, "$123.45" not "$123.45 dollars".
+              </p>
             </div>
 
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-4">
-                  <span className="text-blue-600 font-bold">4</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-2">Amount in Words</h3>
-                  <p className="text-gray-600 mb-3">
-                    On the line below the payee, the amount is written out in words: "One hundred twenty-three and
-                    45/100". This serves as a verification of the numerical amount.
-                  </p>
-                  <div className="bg-gray-50 p-3 rounded-md border border-gray-200">
-                    <p className="font-medium">In the sample:</p>
-                    <p className="text-gray-700">One hundred twenty-three and 45/100 Dollars</p>
-                    <p className="mt-2 text-sm text-gray-500">
-                      <strong>Format:</strong> Start at the far left of the line. Write out the dollar amount in words,
-                      then write "and" followed by the cents as a fraction over 100. End with the word "Dollars". Draw a
-                      line through any remaining space.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <h3 className="text-lg font-medium text-gray-900 mb-2">4. Amount in Words</h3>
+              <p className="text-gray-600">
+                Write out the amount in words on the line below the payee. Start with a capital letter and end with
+                "Dollars". For cents, write them as a fraction (e.g., "and 45/100"). Draw a line to fill any remaining
+                space.
+              </p>
             </div>
 
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-4">
-                  <span className="text-blue-600 font-bold">5</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-2">Memo Line (Optional)</h3>
-                  <p className="text-gray-600 mb-3">
-                    In the bottom left corner, the memo line shows "Rent Payment". This is optional but helpful for
-                    record-keeping and for the recipient to know what the payment is for.
-                  </p>
-                  <div className="bg-gray-50 p-3 rounded-md border border-gray-200">
-                    <p className="font-medium">In the sample:</p>
-                    <p className="text-gray-700">Rent Payment</p>
-                    <p className="mt-2 text-sm text-gray-500">
-                      <strong>Common uses:</strong> Invoice numbers, account numbers, purpose of payment (e.g., "April
-                      Rent", "Car Payment", "Invoice #12345").
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <h3 className="text-lg font-medium text-gray-900 mb-2">5. Memo</h3>
+              <p className="text-gray-600">
+                The memo line is optional but helpful for record-keeping. Write what the check is for, like "Rent for
+                April" or "Birthday gift".
+              </p>
             </div>
 
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-4">
-                  <span className="text-blue-600 font-bold">6</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-2">Signature</h3>
-                  <p className="text-gray-600 mb-3">
-                    In the bottom right corner, the check is signed "Jane Doe". This is your signature, which authorizes
-                    the bank to release the funds.
-                  </p>
-                  <div className="bg-gray-50 p-3 rounded-md border border-gray-200">
-                    <p className="font-medium">In the sample:</p>
-                    <p className="text-gray-700">Jane Doe</p>
-                    <p className="mt-2 text-sm text-gray-500">
-                      <strong>Important:</strong> A check is not valid without your signature. Always sign your name the
-                      same way you did when you opened your bank account.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <h3 className="text-lg font-medium text-gray-900 mb-2">6. Signature</h3>
+              <p className="text-gray-600">
+                Sign your name exactly as it appears on your bank account. This is crucial - without a proper signature,
+                the check is invalid.
+              </p>
             </div>
           </div>
         </div>
@@ -300,21 +209,19 @@ export default function SampleHowToWriteACheckClient() {
           </div>
         </div>
 
-        {/* CTA Section */}
+        {/* CTA Section - Base Product */}
         <div className="my-12 bg-blue-50 rounded-lg shadow-md border border-blue-200 p-6 text-center">
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">Want to practice writing checks?</h3>
-          <p className="text-gray-600 mb-4">
-            Download our printable check template to practice filling out checks correctly.
-          </p>
+          <h3 className="text-xl font-semibold text-gray-900 mb-2">Need a simple printable check?</h3>
+          <p className="text-gray-600 mb-4">Get a ready-to-use printable or editable check template for just $1.</p>
           <Button
             className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-md font-medium"
-            onClick={() => window.open("https://gumroad.com/l/check-template", "_blank")}
+            onClick={() => window.open("https://builtbyagus.gumroad.com/l/gagmwe", "_blank")}
           >
-            Download Printable Template – $1
+            Download Printable Check – $1
           </Button>
         </div>
 
-        {/* Main CTA Section */}
+        {/* Main CTA Section - Both Products */}
         <div className="my-12 md:my-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Primary CTA */}

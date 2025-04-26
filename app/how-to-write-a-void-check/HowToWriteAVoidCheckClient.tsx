@@ -198,100 +198,15 @@ export default function HowToWriteAVoidCheckClient() {
           </div>
         </div>
 
-        {/* Visual Example */}
-        <div className="my-12 bg-gray-50 p-6 rounded-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Example: Properly Voided Check</h2>
-          <div className="relative w-full h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-md bg-white">
-            <Image
-              src="/void-check-example.png"
-              alt="Example of a properly voided check with VOID written across it"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-          <div className="mt-4 space-y-2 text-gray-600">
-            <p>
-              <strong>Key points to notice in this example:</strong>
-            </p>
-            <ul className="list-disc pl-5 space-y-1">
-              <li>The word "VOID" is written in large capital letters diagonally across the check</li>
-              <li>The letters are large enough to cover most of the check</li>
-              <li>The bank routing number and account number at the bottom remain visible</li>
-              <li>No other fields are filled in (no signature, date, or amount)</li>
-            </ul>
-          </div>
-        </div>
-
         {/* Finding Your Account Information */}
-        <div className="my-12 bg-green-50 p-6 rounded-lg border border-green-100">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Understanding Your Check's Account Information</h2>
-          <p className="text-gray-700 mb-4">
-            When providing a void check, the recipient is looking for your banking details. Here's how to identify the
-            key information on your check:
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-            <div className="bg-white p-4 rounded-md border border-gray-200">
-              <h3 className="font-medium text-gray-900 mb-2">Routing Number</h3>
-              <p className="text-gray-600 mb-2">
-                This is the 9-digit number on the bottom left of your check. It identifies your bank in the U.S. banking
-                system.
-              </p>
-              <div className="text-sm text-gray-500">
-                <strong>Format:</strong> Nine digits, usually starts with a 0, 1, 2, or 3
-              </div>
-            </div>
-
-            <div className="bg-white p-4 rounded-md border border-gray-200">
-              <h3 className="font-medium text-gray-900 mb-2">Account Number</h3>
-              <p className="text-gray-600 mb-2">
-                This appears after the routing number at the bottom of your check. It's your unique account identifier
-                at your bank.
-              </p>
-              <div className="text-sm text-gray-500">
-                <strong>Format:</strong> Usually 10-12 digits, but length can vary by bank
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-4 text-sm text-gray-500">
-            <strong>Note:</strong> The third set of numbers at the bottom of your check is usually the check number,
-            which matches the number in the top right corner of the check.
-          </div>
-        </div>
-
-        {/* Alternatives to Void Checks */}
         <div className="my-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Alternatives to Providing a Void Check</h2>
-          <p className="text-gray-700 mb-4">
-            If you don't have checks or prefer not to void one, here are some alternatives that many organizations
-            accept:
-          </p>
-
-          <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Finding Your Account Information</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
-              <h3 className="text-lg font-medium text-gray-900 mb-2">Direct Deposit Authorization Form</h3>
+              <h3 className="text-lg font-medium text-gray-900 mb-2">Physical Check Information</h3>
               <p className="text-gray-600">
-                Many employers and organizations provide their own direct deposit forms where you can enter your banking
-                information manually. These forms typically ask for your routing number, account number, account type,
-                and bank name.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
-              <h3 className="text-lg font-medium text-gray-900 mb-2">Bank Letter or Statement</h3>
-              <p className="text-gray-600">
-                Your bank can provide an official letter or statement that includes your account information. This
-                document is often accepted in place of a void check.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
-              <h3 className="text-lg font-medium text-gray-900 mb-2">Deposit Slip</h3>
-              <p className="text-gray-600">
-                A deposit slip from your checkbook contains your account information and can sometimes be used instead
-                of a void check. However, not all deposit slips include the routing number.
+                If you have a physical check, you can find your routing number and account number at the bottom of the
+                check. The routing number is the first set of numbers, and your account number is the second set.
               </p>
             </div>
 

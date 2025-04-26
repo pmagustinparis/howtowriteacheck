@@ -210,64 +210,31 @@ export default function HowToWriteACheckWithCentsClient() {
         </div>
 
         {/* Common Mistakes */}
-        <div className="my-12 bg-red-50 p-6 rounded-lg border border-red-100">
+        <div className="my-12 bg-red-50 rounded-lg p-6 border border-red-100">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Common Mistakes to Avoid</h2>
           <div className="space-y-4">
-            <div className="flex items-start">
-              <div className="flex-shrink-0 text-red-500 mr-3">❌</div>
-              <div>
-                <h3 className="font-medium text-gray-900">Writing cents as a decimal</h3>
-                <p className="text-gray-600">
-                  <strong>Incorrect:</strong> "One hundred twenty-three{" "}
-                  <span className="text-red-500">point four five</span> Dollars"
-                </p>
-                <p className="text-gray-600">
-                  <strong>Correct:</strong> "One hundred twenty-three <span className="text-green-500">and 45/100</span>{" "}
-                  Dollars"
-                </p>
-              </div>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
+              <h3 className="text-lg font-medium text-gray-900 mb-2">Incorrect Decimal Placement</h3>
+              <p className="text-gray-600">
+                Don't write the decimal point too small or too close to the numbers. Make it clearly visible to prevent
+                confusion between dollars and cents.
+              </p>
             </div>
 
-            <div className="flex items-start">
-              <div className="flex-shrink-0 text-red-500 mr-3">❌</div>
-              <div>
-                <h3 className="font-medium text-gray-900">Omitting zeros for single-digit cents</h3>
-                <p className="text-gray-600">
-                  <strong>Incorrect:</strong> "Fifty and <span className="text-red-500">5/100</span> Dollars" (for
-                  $50.05)
-                </p>
-                <p className="text-gray-600">
-                  <strong>Correct:</strong> "Fifty and <span className="text-green-500">05/100</span> Dollars"
-                </p>
-              </div>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
+              <h3 className="text-lg font-medium text-gray-900 mb-2">Omitting the Word "and"</h3>
+              <p className="text-gray-600">
+                Always include the word "and" before writing the cents portion. For example, write "One hundred twenty-three
+                and 45/100" not "One hundred twenty-three 45/100".
+              </p>
             </div>
 
-            <div className="flex items-start">
-              <div className="flex-shrink-0 text-red-500 mr-3">❌</div>
-              <div>
-                <h3 className="font-medium text-gray-900">Writing cents in words</h3>
-                <p className="text-gray-600">
-                  <strong>Incorrect:</strong> "One hundred and <span className="text-red-500">forty-five cents</span>{" "}
-                  Dollars"
-                </p>
-                <p className="text-gray-600">
-                  <strong>Correct:</strong> "One hundred and <span className="text-green-500">45/100</span> Dollars"
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start">
-              <div className="flex-shrink-0 text-red-500 mr-3">❌</div>
-              <div>
-                <h3 className="font-medium text-gray-900">Forgetting to write "and" before the cents</h3>
-                <p className="text-gray-600">
-                  <strong>Incorrect:</strong> "Two hundred fifty <span className="text-red-500">75/100</span> Dollars"
-                </p>
-                <p className="text-gray-600">
-                  <strong>Correct:</strong> "Two hundred fifty <span className="text-green-500">and 75/100</span>{" "}
-                  Dollars"
-                </p>
-              </div>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
+              <h3 className="text-lg font-medium text-gray-900 mb-2">Incorrect Fraction Format</h3>
+              <p className="text-gray-600">
+                Write cents as a fraction with 100 as the denominator (e.g., 45/100). Don't write it as a decimal (e.g.,
+                0.45) or as words (e.g., "forty-five cents").
+              </p>
             </div>
           </div>
         </div>
