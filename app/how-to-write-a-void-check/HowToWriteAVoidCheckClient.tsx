@@ -4,10 +4,38 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import Footer from "@/components/footer"
 import CTASection from "@/components/cta-section"
+import Link from "next/link"
+import Logo from "@/components/logo"
+
+const guides = [
+  {
+    href: "/how-to-write-a-check-with-cents",
+    title: "How to Write a Check with Cents",
+    desc: "Step-by-step guide for writing checks that include cents."
+  },
+  {
+    href: "/how-to-write-a-check-for-1000",
+    title: "How to Write a Check for $1,000",
+    desc: "Instructions and visual example for $1,000 checks."
+  },
+  {
+    href: "/how-to-write-a-check-with-thousands-and-cents",
+    title: "How to Write a Check with Thousands and Cents",
+    desc: "Learn to write large checks with cents correctly."
+  },
+  {
+    href: "/sample-how-to-write-a-check",
+    title: "Sample: How to Write a Check",
+    desc: "See a real filled-out check example and learn with a practical case."
+  },
+]
 
 export default function HowToWriteAVoidCheckClient() {
   return (
     <main className="min-h-screen bg-white">
+      <header className="sticky top-0 z-30 bg-white border-b border-gray-100 py-4 px-4 sm:px-8 flex items-center">
+        <Logo />
+      </header>
       <section className="w-full py-8 md:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         {/* Hero Section */}
         <div className="text-center mb-8 md:mb-12">
@@ -239,6 +267,20 @@ export default function HowToWriteAVoidCheckClient() {
         {/* AdSense Placeholder */}
         <div className="my-8" id="adsense-placeholder" aria-hidden="true">
           {/* AdSense will be inserted here in the future */}
+        </div>
+
+        {/* FAQ Section */}
+        {/* Explore More Guides */}
+        <div className="my-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Explore More Guides</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {guides.map((guide) => (
+              <Link key={guide.href} href={guide.href} className="block bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-semibold text-blue-700 mb-2">{guide.title}</h3>
+                <p className="text-gray-600">{guide.desc}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

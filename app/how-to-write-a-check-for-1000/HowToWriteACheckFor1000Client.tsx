@@ -4,34 +4,75 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { CheckCircle } from "lucide-react"
 import Footer from "@/components/footer"
+import Link from "next/link"
+import Logo from "@/components/logo"
+import CTASection from "@/components/cta-section"
+import FAQSection from "@/components/faq-section"
+
+const guides = [
+  {
+    href: "/how-to-write-a-check-with-cents",
+    title: "How to Write a Check with Cents",
+    desc: "Step-by-step guide for writing checks that include cents."
+  },
+  {
+    href: "/how-to-write-a-check-with-thousands-and-cents",
+    title: "How to Write a Check with Thousands and Cents",
+    desc: "Learn to write large checks with cents correctly."
+  },
+  {
+    href: "/how-to-write-a-void-check",
+    title: "How to Void a Check",
+    desc: "When and how to void a check for deposits or payments."
+  },
+  {
+    href: "/sample-how-to-write-a-check",
+    title: "Sample: How to Write a Check",
+    desc: "See a real filled-out check example and learn with a practical case."
+  },
+]
 
 export default function HowToWriteACheckFor1000Client() {
   return (
     <main className="min-h-screen bg-white">
+      <header className="sticky top-0 z-30 bg-white border-b border-gray-100 py-4 px-4 sm:px-8 flex items-center">
+        <Logo />
+      </header>
       <section className="w-full py-8 md:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         {/* Hero Section */}
         <div className="text-center mb-8 md:mb-12">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 mb-4">
-            How to Write a Check for 1000 Dollars
+            How to Write a Check for $1,000 (Step-by-Step Guide)
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-            Learn the proper way to write a check for exactly $1,000 with our step-by-step guide and visual example.
+            Learn the proper way to write a check for one thousand dollars to ensure your payment is processed correctly and
+            securely.
           </p>
         </div>
 
         {/* Introduction */}
         <div className="my-8 bg-blue-50 rounded-lg p-6 border border-blue-100">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Writing a Check for $1,000</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Writing Large Amounts Correctly Matters</h2>
           <p className="text-gray-700 mb-4">
-            Writing a check for $1,000 is common for many important payments like rent, tuition, deposits, or large
-            purchases. While it's a round number, it's still crucial to format it correctly to prevent confusion or
-            potential fraud.
+            When writing a check for a large amount like $1,000, proper formatting is crucial. The difference between writing
+            a check correctly and incorrectly might seem minor, but it can lead to confusion, payment errors, or even make
+            your check vulnerable to fraud.
           </p>
           <p className="text-gray-700">
-            Since $1,000 is a significant amount, taking extra care when writing the check ensures the payment is
-            processed correctly and securely. This guide will walk you through each step of writing a check for exactly
-            one thousand dollars.
+            Banks process millions of checks daily, and clear formatting helps ensure your payment is processed exactly as
+            intended. This guide will show you exactly how to write one thousand dollars in both the numeric amount box and
+            the written amount line.
           </p>
+        </div>
+
+        {/* Check Form */}
+        <div className="my-12">
+          {/* Add CheckForm component here */}
+        </div>
+
+        {/* CTA Section */}
+        <div className="my-12">
+          <CTASection />
         </div>
 
         {/* Step-by-Step Guide */}
@@ -214,34 +255,8 @@ export default function HowToWriteACheckFor1000Client() {
           </div>
         </div>
 
-        {/* Visual Example */}
-        <div className="my-12 bg-gray-50 p-6 rounded-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Example: Check for $1,000 Properly Written</h2>
-          <div className="relative w-full h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-md bg-white">
-            <Image
-              src="/check-for-1000-example.png"
-              alt="Example of a properly written check for $1,000"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-          <div className="mt-4 space-y-2 text-gray-600">
-            <p>
-              <strong>Key points to notice in this example:</strong>
-            </p>
-            <ul className="list-disc pl-5 space-y-1">
-              <li>The amount box clearly shows "$1,000.00" with a comma and decimal point</li>
-              <li>The written amount reads "One thousand and 00/100 Dollars"</li>
-              <li>A line is drawn after "Dollars" to fill the remaining space</li>
-              <li>The memo line indicates what the payment is for</li>
-              <li>The check is signed in the bottom right corner</li>
-            </ul>
-          </div>
-        </div>
-
         {/* Common Mistakes */}
-        <div className="my-12 bg-red-50 rounded-lg p-6 border border-red-100">
+        <div className="my-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Common Mistakes to Avoid</h2>
           <div className="space-y-4">
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
@@ -267,153 +282,22 @@ export default function HowToWriteACheckFor1000Client() {
           </div>
         </div>
 
-        {/* When You Might Need to Write a $1,000 Check */}
+        {/* FAQ Section */}
         <div className="my-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Common Reasons to Write a $1,000 Check</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
-              <h3 className="text-lg font-medium text-gray-900 mb-2">Rent or Security Deposit</h3>
-              <p className="text-gray-600">
-                Many rental properties require a security deposit or first month's rent of around $1,000. Landlords
-                often prefer checks for these transactions as they provide a paper trail.
-              </p>
-            </div>
+          <FAQSection />
+        </div>
 
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
-              <h3 className="text-lg font-medium text-gray-900 mb-2">Tuition or Education Expenses</h3>
-              <p className="text-gray-600">
-                Educational institutions may require payment by check for tuition installments, course fees, or
-                dormitory deposits that amount to $1,000.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
-              <h3 className="text-lg font-medium text-gray-900 mb-2">Contractor Payments</h3>
-              <p className="text-gray-600">
-                Home repairs, renovations, or service contracts often require deposit payments of $1,000, and many
-                contractors prefer payment by check.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
-              <h3 className="text-lg font-medium text-gray-900 mb-2">Large Purchases</h3>
-              <p className="text-gray-600">
-                When buying furniture, appliances, or electronics, you might pay a $1,000 deposit or installment by
-                check, especially for custom orders.
-              </p>
-            </div>
+        {/* Explore More Guides */}
+        <div className="my-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Explore More Guides</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {guides.map((guide) => (
+              <Link key={guide.href} href={guide.href} className="block bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-semibold text-blue-700 mb-2">{guide.title}</h3>
+                <p className="text-gray-600">{guide.desc}</p>
+              </Link>
+            ))}
           </div>
-        </div>
-
-        {/* CTA Section - Base Product */}
-        <div className="my-12 bg-blue-50 rounded-lg shadow-md border border-blue-200 p-6 text-center">
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">Need a simple printable check?</h3>
-          <p className="text-gray-600 mb-4">Get a ready-to-use printable or editable check template for just $1.</p>
-          <Button
-            className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-md font-medium"
-            onClick={() => window.open("https://builtbyagus.gumroad.com/l/gagmwe", "_blank")}
-          >
-            Download Printable Check – $1
-          </Button>
-        </div>
-
-        {/* Main CTA Section - Both Products */}
-        <div className="my-12 md:my-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Primary CTA */}
-            <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow">
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold text-gray-900">Printable + Editable Check Template</h3>
-                <p className="text-gray-600">
-                  Get our professionally designed check template that you can print and fill out, or edit digitally
-                  before printing. Perfect for practicing writing checks for $1,000 and other amounts.
-                </p>
-
-                <ul className="space-y-2">
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                    <span>High-quality printable PDF</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Editable fields for digital completion</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Instant download - no login required</span>
-                  </li>
-                </ul>
-
-                <div className="pt-4">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-2xl font-bold text-gray-900">$1.00</span>
-                    <span className="text-sm text-gray-500 line-through">$2.99</span>
-                  </div>
-
-                  <Button
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium text-lg"
-                    onClick={() => window.open("https://gumroad.com/l/check-template", "_blank")}
-                  >
-                    Download Printable + Editable Version
-                  </Button>
-                </div>
-              </div>
-            </div>
-
-            {/* Secondary CTA */}
-            <div className="bg-gray-50 rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow">
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold text-gray-900">Complete Check Writing Kit</h3>
-                <p className="text-gray-600">
-                  Our comprehensive package includes everything you need for check writing, including templates for
-                  common amounts like $1,000, plus guides and examples.
-                </p>
-
-                <ul className="space-y-2">
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                    <span>10+ editable check templates</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Digital check register spreadsheet</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Visual guide with examples</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Check security tips PDF</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Lifetime updates</span>
-                  </li>
-                </ul>
-
-                <div className="pt-4">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-2xl font-bold text-gray-900">$6.99</span>
-                    <span className="text-sm text-gray-500 line-through">$14.99</span>
-                  </div>
-
-                  <Button
-                    variant="outline"
-                    className="w-full border-blue-600 text-blue-600 hover:bg-blue-50 py-2 px-4 rounded-md font-medium text-lg"
-                    onClick={() => window.open("https://gumroad.com/l/check-bundle", "_blank")}
-                  >
-                    Get the Full Editable Pack + Visual Guide
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* AdSense Placeholder */}
-        <div className="my-8" id="adsense-placeholder" aria-hidden="true">
-          {/* AdSense will be inserted here in the future */}
         </div>
       </section>
 

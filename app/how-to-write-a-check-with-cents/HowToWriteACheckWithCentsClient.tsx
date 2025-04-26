@@ -4,10 +4,39 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import Footer from "@/components/footer"
 import CTASection from "@/components/cta-section"
+import FAQSection from "@/components/faq-section"
+import Link from "next/link"
+import Logo from "@/components/logo"
+
+const guides = [
+  {
+    href: "/how-to-write-a-check-for-1000",
+    title: "How to Write a Check for $1,000",
+    desc: "Instructions and visual example for $1,000 checks."
+  },
+  {
+    href: "/how-to-write-a-check-with-thousands-and-cents",
+    title: "How to Write a Check with Thousands and Cents",
+    desc: "Learn to write large checks with cents correctly."
+  },
+  {
+    href: "/how-to-write-a-void-check",
+    title: "How to Void a Check",
+    desc: "When and how to void a check for deposits or payments."
+  },
+  {
+    href: "/sample-how-to-write-a-check",
+    title: "Sample: How to Write a Check",
+    desc: "See a real filled-out check example and learn with a practical case."
+  },
+]
 
 export default function HowToWriteACheckWithCentsClient() {
   return (
     <main className="min-h-screen bg-white">
+      <header className="sticky top-0 z-30 bg-white border-b border-gray-100 py-4 px-4 sm:px-8 flex items-center">
+        <Logo />
+      </header>
       <section className="w-full py-8 md:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         {/* Hero Section */}
         <div className="text-center mb-8 md:mb-12">
@@ -33,6 +62,16 @@ export default function HowToWriteACheckWithCentsClient() {
             as intended. This guide will show you exactly how to write cents in both the numeric amount box and the
             written amount line.
           </p>
+        </div>
+
+        {/* Check Form */}
+        <div className="my-12">
+          {/* Add CheckForm component here */}
+        </div>
+
+        {/* CTA Section */}
+        <div className="my-12">
+          <CTASection />
         </div>
 
         {/* Step-by-Step Guide */}
@@ -184,33 +223,8 @@ export default function HowToWriteACheckWithCentsClient() {
           </div>
         </div>
 
-        {/* Visual Example */}
-        <div className="my-12 bg-gray-50 p-6 rounded-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Example: Check with Cents Properly Written</h2>
-          <div className="relative w-full h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-md bg-white">
-            <Image
-              src="/check-with-cents-example.png"
-              alt="Example of a check with cents properly written"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-          <div className="mt-4 space-y-2 text-gray-600">
-            <p>
-              <strong>Key points to notice in this example:</strong>
-            </p>
-            <ul className="list-disc pl-5 space-y-1">
-              <li>The amount box clearly shows "$123.45" with the decimal point and cents</li>
-              <li>The written amount includes "and 45/100" after "One hundred twenty-three"</li>
-              <li>A line is drawn after "Dollars" to fill the remaining space</li>
-              <li>The cents are written as a fraction (45/100) rather than in words</li>
-            </ul>
-          </div>
-        </div>
-
         {/* Common Mistakes */}
-        <div className="my-12 bg-red-50 rounded-lg p-6 border border-red-100">
+        <div className="my-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Common Mistakes to Avoid</h2>
           <div className="space-y-4">
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5">
@@ -239,70 +253,23 @@ export default function HowToWriteACheckWithCentsClient() {
           </div>
         </div>
 
-        {/* Quick Reference Table */}
+        {/* FAQ Section */}
         <div className="my-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Quick Reference: Writing Different Cent Amounts</h2>
-          <div className="overflow-x-auto">
-            <table className="min-w-full bg-white border border-gray-200 rounded-lg">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th className="py-3 px-4 text-left text-gray-700 font-medium border-b">Amount</th>
-                  <th className="py-3 px-4 text-left text-gray-700 font-medium border-b">In the Box</th>
-                  <th className="py-3 px-4 text-left text-gray-700 font-medium border-b">Written Out</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200">
-                <tr>
-                  <td className="py-3 px-4 text-gray-700">Whole dollar amount</td>
-                  <td className="py-3 px-4 text-gray-700">$100.00</td>
-                  <td className="py-3 px-4 text-gray-700">One hundred and 00/100 Dollars</td>
-                </tr>
-                <tr>
-                  <td className="py-3 px-4 text-gray-700">Single-digit cents</td>
-                  <td className="py-3 px-4 text-gray-700">$25.05</td>
-                  <td className="py-3 px-4 text-gray-700">Twenty-five and 05/100 Dollars</td>
-                </tr>
-                <tr>
-                  <td className="py-3 px-4 text-gray-700">Double-digit cents</td>
-                  <td className="py-3 px-4 text-gray-700">$75.50</td>
-                  <td className="py-3 px-4 text-gray-700">Seventy-five and 50/100 Dollars</td>
-                </tr>
-                <tr>
-                  <td className="py-3 px-4 text-gray-700">Cents only (less than $1)</td>
-                  <td className="py-3 px-4 text-gray-700">$0.75</td>
-                  <td className="py-3 px-4 text-gray-700">Zero and 75/100 Dollars</td>
-                </tr>
-                <tr>
-                  <td className="py-3 px-4 text-gray-700">Large amount with cents</td>
-                  <td className="py-3 px-4 text-gray-700">$1,234.56</td>
-                  <td className="py-3 px-4 text-gray-700">One thousand two hundred thirty-four and 56/100 Dollars</td>
-                </tr>
-              </tbody>
-            </table>
+          <FAQSection />
+        </div>
+
+        {/* Explore More Guides */}
+        <div className="my-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Explore More Guides</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {guides.map((guide) => (
+              <Link key={guide.href} href={guide.href} className="block bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-semibold text-blue-700 mb-2">{guide.title}</h3>
+                <p className="text-gray-600">{guide.desc}</p>
+              </Link>
+            ))}
           </div>
         </div>
-
-        {/* CTA Section - Base Product */}
-        <div className="my-12 bg-blue-50 rounded-lg shadow-md border border-blue-200 p-6 text-center">
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">Need a simple printable check?</h3>
-          <p className="text-gray-600 mb-4">Get a ready-to-use printable or editable check template for just $1.</p>
-          <Button
-            className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-md font-medium"
-            onClick={() => window.open("https://builtbyagus.gumroad.com/l/gagmwe", "_blank")}
-          >
-            Download Printable Check – $1
-          </Button>
-        </div>
-
-        {/* Main CTA Section - Both Products */}
-        <CTASection />
-
-        {/* AdSense Placeholder */}
-        <div className="my-8" id="adsense-placeholder" aria-hidden="true">
-          {/* AdSense will be inserted here in the future */}
-        </div>
-
-        {/* FAQ Section */}
       </section>
 
       {/* Footer */}
