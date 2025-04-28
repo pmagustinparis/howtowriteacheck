@@ -22,6 +22,11 @@ export default function Footer() {
             </a>
           </div>
         </div>
+        <div className="mt-6 flex justify-center">
+          <a href="https://www.producthunt.com/posts/how-write-a-check?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-how&#0045;write&#0045;a&#0045;check" target="_blank" rel="noopener noreferrer">
+            <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=958641&theme=dark&t=1745855048061" alt="How Write a Check - The easiest way to learn how to properly write a check | Product Hunt" style={{ width: 250, height: 54 }} width="250" height="54" />
+          </a>
+        </div>
       </div>
     </footer>
   )
