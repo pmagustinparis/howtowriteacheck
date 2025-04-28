@@ -25,6 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-adsense-account" content="ca-pub-7284807519318213" />
+        <link rel="canonical" href="https://www.howwriteacheck.com/" />
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7284807519318213"
