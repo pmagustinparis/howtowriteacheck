@@ -69,11 +69,11 @@ export default function Home() {
           </p>
         </div>
 
+        <StepByStepGuide />
+        <div className="my-12" />
         <CheckForm />
         <div className="my-12" />
         <CTASection />
-        <div className="my-12" />
-        <StepByStepGuide />
         <div className="my-12" />
         <CommonMistakes />
         <div className="my-12" />

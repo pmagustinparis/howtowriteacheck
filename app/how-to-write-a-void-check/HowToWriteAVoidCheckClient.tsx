@@ -48,29 +48,6 @@ export default function HowToWriteAVoidCheckClient() {
           </p>
         </div>
 
-        {/* Introduction */}
-        <div className="my-8 bg-blue-50 rounded-lg p-6 border border-blue-100">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is a Void Check?</h2>
-          <p className="text-gray-700 mb-4">
-            A void check is a check that has been marked with the word "VOID" across its face, making it impossible to
-            use for payment. Unlike regular checks, void checks are not used to transfer money but rather to share your
-            banking information safely.
-          </p>
-          <p className="text-gray-700 mb-4">
-            <strong>Common uses for void checks include:</strong>
-          </p>
-          <ul className="list-disc pl-5 space-y-2 text-gray-700">
-            <li>Setting up direct deposit with your employer</li>
-            <li>Establishing automatic bill payments</li>
-            <li>Linking your bank account to payment apps or services</li>
-            <li>Setting up automatic transfers between accounts</li>
-          </ul>
-          <p className="text-gray-700 mt-4">
-            The void check provides the recipient with your account number, routing number, and other banking details
-            without the risk of someone using the check for payment.
-          </p>
-        </div>
-
         {/* Step-by-Step Guide */}
         <div className="my-12">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">How to Write a Void Check: Step-by-Step</h2>
@@ -224,6 +201,29 @@ export default function HowToWriteAVoidCheckClient() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Introduction */}
+        <div className="my-8 bg-blue-50 rounded-lg p-6 border border-blue-100">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">What Is a Void Check?</h2>
+          <p className="text-gray-700 mb-4">
+            A void check is a check that has been marked with the word "VOID" across its face, making it impossible to
+            use for payment. Unlike regular checks, void checks are not used to transfer money but rather to share your
+            banking information safely.
+          </p>
+          <p className="text-gray-700 mb-4">
+            <strong>Common uses for void checks include:</strong>
+          </p>
+          <ul className="list-disc pl-5 space-y-2 text-gray-700">
+            <li>Setting up direct deposit with your employer</li>
+            <li>Establishing automatic bill payments</li>
+            <li>Linking your bank account to payment apps or services</li>
+            <li>Setting up automatic transfers between accounts</li>
+          </ul>
+          <p className="text-gray-700 mt-4">
+            The void check provides the recipient with your account number, routing number, and other banking details
+            without the risk of someone using the check for payment.
+          </p>
         </div>
 
         {/* Finding Your Account Information */}

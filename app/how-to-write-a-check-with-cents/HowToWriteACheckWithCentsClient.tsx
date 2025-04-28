@@ -49,31 +49,6 @@ export default function HowToWriteACheckWithCentsClient() {
           </p>
         </div>
 
-        {/* Introduction */}
-        <div className="my-8 bg-blue-50 rounded-lg p-6 border border-blue-100">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Writing Cents Correctly Matters</h2>
-          <p className="text-gray-700 mb-4">
-            When writing a check, properly formatting the cents portion is crucial. The difference between writing a
-            check with and without cents might seem minor, but incorrect formatting can lead to confusion, payment
-            errors, or even make your check vulnerable to fraud.
-          </p>
-          <p className="text-gray-700">
-            Banks process millions of checks daily, and clear formatting helps ensure your payment is processed exactly
-            as intended. This guide will show you exactly how to write cents in both the numeric amount box and the
-            written amount line.
-          </p>
-        </div>
-
-        {/* Check Form */}
-        <div className="my-12">
-          {/* Add CheckForm component here */}
-        </div>
-
-        {/* CTA Section */}
-        <div className="my-12">
-          <CTASection />
-        </div>
-
         {/* Step-by-Step Guide */}
         <div className="my-12">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
@@ -221,6 +196,31 @@ export default function HowToWriteACheckWithCentsClient() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Introduction */}
+        <div className="my-8 bg-blue-50 rounded-lg p-6 border border-blue-100">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Writing Cents Correctly Matters</h2>
+          <p className="text-gray-700 mb-4">
+            When writing a check, properly formatting the cents portion is crucial. The difference between writing a
+            check with and without cents might seem minor, but incorrect formatting can lead to confusion, payment
+            errors, or even make your check vulnerable to fraud.
+          </p>
+          <p className="text-gray-700">
+            Banks process millions of checks daily, and clear formatting helps ensure your payment is processed exactly
+            as intended. This guide will show you exactly how to write cents in both the numeric amount box and the
+            written amount line.
+          </p>
+        </div>
+
+        {/* Check Form */}
+        <div className="my-12">
+          {/* Add CheckForm component here */}
+        </div>
+
+        {/* CTA Section */}
+        <div className="my-12">
+          <CTASection />
         </div>
 
         {/* Common Mistakes */}

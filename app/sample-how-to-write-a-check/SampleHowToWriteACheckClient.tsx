@@ -48,21 +48,6 @@ export default function SampleHowToWriteACheckClient() {
           </p>
         </div>
 
-        {/* Introduction */}
-        <div className="my-8 bg-blue-50 rounded-lg p-6 border border-blue-100">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Learning from a Real Example</h2>
-          <p className="text-gray-700 mb-4">
-            Many people find it easier to learn how to write a check by seeing a clear, properly filled-out example.
-            Visual learning helps you understand exactly where each piece of information goes and how it should be
-            formatted.
-          </p>
-          <p className="text-gray-700">
-            Below, we've provided a complete sample check with every field filled out correctly. We'll break down each
-            component step-by-step so you can understand the purpose of each field and how to fill it out properly on
-            your own checks.
-          </p>
-        </div>
-
         {/* Detailed Breakdown of Each Part */}
         <div className="my-12">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Detailed Breakdown of Each Part</h2>
@@ -116,6 +101,21 @@ export default function SampleHowToWriteACheckClient() {
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Introduction */}
+        <div className="my-8 bg-blue-50 rounded-lg p-6 border border-blue-100">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Learning from a Real Example</h2>
+          <p className="text-gray-700 mb-4">
+            Many people find it easier to learn how to write a check by seeing a clear, properly filled-out example.
+            Visual learning helps you understand exactly where each piece of information goes and how it should be
+            formatted.
+          </p>
+          <p className="text-gray-700">
+            Below, we've provided a complete sample check with every field filled out correctly. We'll break down each
+            component step-by-step so you can understand the purpose of each field and how to fill it out properly on
+            your own checks.
+          </p>
         </div>
 
         {/* Additional Information About the Check */}
