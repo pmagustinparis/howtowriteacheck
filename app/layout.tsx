@@ -9,10 +9,13 @@ import Script from "next/script"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "How to Write a Check (With Example) – 2025 Step-by-Step Guide",
+  title: {
+    template: '%s | How Write a Check',
+    default: 'How Write a Check - The easiest way to learn how to properly write a check',
+  },
   description:
     "Learn how to properly write a check in 7 simple steps. Includes a visual example, interactive preview, and downloadable printable templates for practice.",
-  metadataBase: new URL("https://howwriteacheck.com"),
+  metadataBase: new URL("https://www.howwriteacheck.com"),
     generator: 'v0.dev'
 }
 
@@ -29,7 +32,7 @@ export default function RootLayout({
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7284807519318213"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
           strategy="afterInteractive"
         />
       </head>
