@@ -5,6 +5,7 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import GoogleAnalytics from "@/components/google-analytics"
 import Script from "next/script"
+import { usePathname } from "next/navigation"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -24,11 +25,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const pathname = usePathname()
+  const canonicalUrl = `https://www.howwriteacheck.com${pathname || '/'}`
+
   return (
     <html lang="en">
       <head>
         <meta name="google-adsense-account" content="ca-pub-7284807519318213" />
-        <link rel="canonical" href="https://www.howwriteacheck.com/" />
+        <link rel="canonical" href={canonicalUrl} />
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7284807519318213"
